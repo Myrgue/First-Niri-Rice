@@ -1,0 +1,60 @@
+{
+	"position": "bottom",
+	"height": 30,
+	"width": 1280,
+	"spacing": 4,
+	
+	"modules-left": ["sway/workspaces"],
+	"modules-center": ["custom/applauncher"],
+	"modules-right": ["network", "battery", "pulseaudio", "tray", "clock"],
+
+	"sway/workpaces" : {
+		"all-outputs": false,
+		 "tooltip": false
+	},
+	"custom/applauncher": {
+		"format":"0",
+		"on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=bottom y 15",
+		"tooltip": false
+	},
+
+	"tray": {
+		"spacing": 10,
+		"tooltip": false
+	},
+
+	"clock": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+
+	"network": {
+		"format-wigi": "{bandwidthDownBits} {bandwidthUpBits}",
+		"format-disconnected": "Connection to Gun denied",
+		"tooltip": false,
+		"interval": 5
+	},
+
+	"pulseaudio": {
+		"scroll-step": 5,
+		"max-volume": 150,
+		"format": "{volume}%",
+		"format-bluetooth": "{volume}%",
+		"nospacing": 1,
+		"format-muted": "off",
+		"on-click": "pavucontrol",
+		"tooltip": false
+	},
+
+	"battery": {
+		"states": {
+		"warning": 30,
+		"critical": 15
+		},
+	"format": "{capacity)%",
+	"format-charging": "charge {capacity}%",
+	"format-plugged": "branché {capacity}%",
+	"format-alt": "{time}",
+	"format-full": "full"
+	}
+}

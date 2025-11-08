@@ -1,0 +1,40 @@
+window {
+  margin: 0px;
+  border: 1px solid #f91c47; /* bordure rouge */
+  background-color: #342d47; /* fond violet */
+  border-radius: 14px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden; /* empêche les coins noirs de déborder */
+}
+
+#outer-box,
+#inner-box,
+#scroll {
+  margin: 5px;
+  border: none;
+  background-color: transparent; /* on rend le fond transparent pour ne pas couvrir le border-radius */
+  border-radius: 14px;
+}
+
+#input {
+  margin: 5px;
+  border: none;
+  border-bottom: 1px solid #f91c47; /* ligne rouge propre */
+  font-style: normal;
+  border-radius: 8px 8px 0 0;
+  color: #f91c47; /* texte rouge */
+  background-color: transparent; /* transparent pour suivre le fond violet */
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: #f91c47; /* texte rouge */
+  background-color: transparent; /* idem */
+}
+
+#entry:selected {
+  background-color: #682846; /* fond rouge quand sélectionné */
+  color: #342d47;
+}
