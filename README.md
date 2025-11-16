@@ -5,3 +5,5 @@ So there'll be maybe some updates in the future.
 Thème Eonyze
 Cursor: Arc dusk
 Icons: Adwaita-Red
+<br/>
+https://github.com/Litarvan/lightdm-webkit-theme-litarvan
